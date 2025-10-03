@@ -284,13 +284,19 @@ const TempleInfo = ({ language, selectedTemple }) => {
             
             <div className="card">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Temple Location</h3>
-              <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center mb-4">
-                <div className="text-center text-gray-500">
-                  <MapPin className="h-12 w-12 mx-auto mb-2" />
-                  <p>Interactive Map</p>
-                  <p className="text-sm">Lat: {temple.coordinates.lat}, Lng: {temple.coordinates.lng}</p>
-                </div>
+              <div className="rounded-lg overflow-hidden mb-4" style={{ height: '16rem' }}>
+                <iframe
+                  title="Temple Location Map"
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(temple.coordinates.lat + ',' + temple.coordinates.lng)}&z=15&output=embed`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
+              <p className="text-sm text-gray-600 mb-4">Lat: {temple.coordinates.lat}, Lng: {temple.coordinates.lng}</p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <button 
