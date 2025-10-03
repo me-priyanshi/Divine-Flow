@@ -11,6 +11,8 @@ const DigitalPass = forwardRef(({ queueData, language, autoDownload = false, onQ
   const [qrCodeDataUrl, setQrCodeDataUrl] = useState('');
   const [qrExpired, setQrExpired] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const innerRef = useRef(null);
+  const passRef = ref || innerRef;
   
   // Handle null/undefined cases
   if (!queueData) {
@@ -271,7 +273,7 @@ const DigitalPass = forwardRef(({ queueData, language, autoDownload = false, onQ
     <div className="space-y-6">
       {/* Digital Pass */}
       <div 
-        ref={ref}
+        ref={passRef}
         id="digital-pass-root"
         className="bg-gradient-to-br from-primary-50 to-temple-50 rounded-2xl shadow-lg overflow-hidden border border-primary-200"
         style={{ fontFamily: 'Arial, sans-serif' }}

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronDown, Globe, MapPin } from 'lucide-react';
 import { translations } from '../data/translations';
 import { templeData } from '../data/templeData';
-import DivineFlowLogo from '../../public/DivineFlowLogo.png';
 
 const Header = ({ language, onLanguageChange, selectedTemple, onTempleChange }) => {
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
@@ -26,7 +25,7 @@ const Header = ({ language, onLanguageChange, selectedTemple, onTempleChange }) 
           {/* App Title */}
           <div className="flex items-center">
             <img 
-                src={DivineFlowLogo} 
+                src="/DivineFlowLogo.png" 
                 alt="DivineFlow Logo"
                 className='h-11 w-auto'
               />

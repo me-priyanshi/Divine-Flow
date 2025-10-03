@@ -12,7 +12,6 @@ import {
 } from 'lucide-react';
 import { translations } from '../data/translations';
 import { templeData, queueData } from '../data/templeData';
-import DivineFlowLogo from '../../public/DivineFlowLogo.png';
 
 const Home = ({ language, selectedTemple }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -76,7 +75,7 @@ const Home = ({ language, selectedTemple }) => {
       <div className="text-center justify-center py-8">
         <div className='flex justify-center'>
         <img 
-          src={DivineFlowLogo} 
+          src={'/DivineFlowLogo.png'} 
           alt="DivineFlow Logo"
           height={100}
           width={180}
