@@ -434,7 +434,7 @@ const Settings = ({ language, onLanguageChange, selectedTemple, onTempleChange }
           </div>
           <div className="flex justify-between">
             <span>Developer:</span>
-            <span className="font-medium text-gray-900 dark:text-gray-100">Divine Flow</span>
+            <span className="font-medium text-gray-900 dark:text-gray-100">DevAIne Guardians</span>
           </div>
         </div>
       </div>
