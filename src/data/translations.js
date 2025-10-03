@@ -211,7 +211,7 @@ export const translations = {
     settings: 'सेटिंग्स',
     
     // Header
-    appTitle: 'मंदिर भीड़ प्रबंधन',
+    appTitle: 'दिव्य प्रवाह',
     selectTemple: 'मंदिर चुनें',
     
     // Temples
@@ -223,7 +223,7 @@ export const translations = {
     },
     
     // Home Page
-    welcome: 'मंदिर भीड़ प्रबंधन में आपका स्वागत है',
+    welcome: 'दिव्य प्रवाह में आपका स्वागत है',
     currentStatus: 'वर्तमान स्थिति',
     crowdLevel: 'भीड़ का स्तर',
     waitTime: 'अनुमानित प्रतीक्षा समय',
